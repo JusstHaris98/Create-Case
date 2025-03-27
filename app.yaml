@@ -1,0 +1,27 @@
+runtime: java17
+env: standard
+
+instance_class: F1
+
+automatic_scaling:
+  target_cpu_utilization: 0.65
+  min_instances: 1
+  max_instances: 10
+
+env_variables:
+  PORT: "8080"
+  SPRING_PROFILES_ACTIVE: "prod"
+
+handlers:
+- url: /.*
+  script: auto
+  secure: always
+
+build_env_variables:
+  GOOGLE_NODE_RUN_SCRIPTS: "build"
+
+beta_settings:
+  cloud_sql_instances: create-case-hack:us-central1:create-case-hack
+
+vpc_access_connector:
+  name: "projects/create-case-hack/locations/us-central1/connectors/create-case-hack"

@@ -1,0 +1,12 @@
+{
+  "accounts": [
+    {
+      "sortCode": "123456",
+      "accountNumber": "98765432"
+    },
+    {
+      "sortCode": "654321",
+      "accountNumber": "12345678"
+    }
+  ]
+} 

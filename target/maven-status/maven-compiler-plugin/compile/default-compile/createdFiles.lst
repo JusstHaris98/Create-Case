@@ -1,0 +1,5 @@
+com/example/bankcomplaint/controller/AuthenticationController.class
+com/example/bankcomplaint/service/AuthenticationService.class
+com/example/bankcomplaint/BankComplaintApplication.class
+com/example/bankcomplaint/model/AuthenticationResponse.class
+com/example/bankcomplaint/model/AccountCredentials.class
