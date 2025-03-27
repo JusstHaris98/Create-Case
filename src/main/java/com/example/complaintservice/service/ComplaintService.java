@@ -16,6 +16,12 @@ public class ComplaintService {
     @Autowired
     private Firestore firestore;
 
+    
+    @Autowired
+    public ComplaintService(Firestore firestore) {
+        this.firestore = firestore;
+    }
+
     public String createComplaint(Complaint complaint) {
         validateComplaint(complaint);
         try {
