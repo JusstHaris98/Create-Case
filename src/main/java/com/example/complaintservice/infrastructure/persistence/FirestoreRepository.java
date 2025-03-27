@@ -1,7 +1,7 @@
 package com.example.complaintservice.infrastructure.persistence;
 
-import com.example.complaintservice.domain.model.Complaint;
-import com.example.complaintservice.common.exception.FirestoreOperationException;
+import com.example.complaintservice.model.Complaint;
+import com.example.complaintservice.exception.FirestoreOperationException;
 import com.google.cloud.firestore.Firestore;
 import org.springframework.stereotype.Repository;
 
